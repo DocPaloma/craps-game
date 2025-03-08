@@ -4,5 +4,6 @@ module com.example.crapsgame {
 
 
     opens com.example.crapsgame to javafx.fxml;
+    opens com.example.crapsgame.controller to javafx.fxml;
     exports com.example.crapsgame;
 }
