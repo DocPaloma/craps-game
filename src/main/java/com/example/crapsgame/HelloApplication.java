@@ -1,5 +1,6 @@
 package com.example.crapsgame;
 
+import com.example.crapsgame.view.WelcomeView;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,12 +12,9 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hi-fpoe.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
-
+        //Patrón singleton
+        WelcomeView welcomeView = WelcomeView.getInstance();
+        welcomeView.show();
 
         /*
         Button button = new Button("Event test");
