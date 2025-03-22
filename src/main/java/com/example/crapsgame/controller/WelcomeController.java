@@ -34,7 +34,6 @@ public class WelcomeController {
         AlertBox alertBox = new AlertBox();
         alertBox.showAlertBox("Are you ready?", "Are you ready?", "Are you ready?");
         GameView gameView = getInstance();
-        gameView.getGameController().setPlayer(player);
         gameView.show();
     }
 

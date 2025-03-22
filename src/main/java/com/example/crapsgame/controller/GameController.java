@@ -1,23 +1,25 @@
 package com.example.crapsgame.controller;
 
-
-import com.example.crapsgame.models.Player;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 
 public class GameController {
 
     @FXML
-    private Label nickNameLabel;
+    private ImageView dice2ImageView;
 
-    private Player player;
+    @FXML
+    private ImageView diceImageView1;
 
-    public void setPlayer(Player player) {
-        this.player = player;
+    @FXML
+    void onActionInstructionsButton(ActionEvent event) {
+
     }
 
-    public void showNickNameLabel() {
-        nickNameLabel.setText(player.getNickname());
+    @FXML
+    void onActionPlayButton(ActionEvent event) {
+
     }
 
 }
